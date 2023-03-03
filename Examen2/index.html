@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Examen Bootstrap</title>
+    <link href="./recursos/css/principal.css" rel="stylesheet">
+</head>
+
+<body>
+    <div class="container my-5">
+        <nav>
+            <div id="mi-tab-nav" class="nav nav-tabs" role="tablist">
+                <button id="mi-tab-nav-tabla" class="nav-link active" data-bs-toggle="tab" data-bs-target="#nav-tabla"
+                    type="button" role="tab" aria-controls="nav-tabla" aria-selected="true">
+                    Tablas
+                </button>
+                <button id="mi-tab-nav-formulario" class="nav-link" data-bs-toggle="tab"
+                    data-bs-target="#nav-formulario" type="button" role="tab" aria-controls="nav-formulario"
+                    aria-selected="false">
+                    Formulario
+                </button>
+                <button id="mi-tab-nav-cards" class="nav-link" data-bs-toggle="tab" data-bs-target="#nav-cards"
+                    type="button" role="tab" aria-controls="nav-cards" aria-selected="false">
+                    Cards
+                </button>
+                <button id="mi-tab-nav-imagen" class="nav-link" data-bs-toggle="tab" data-bs-target="#nav-imagen"
+                    type="button" role="tab" aria-controls="nav-imagen" aria-selected="false">
+                    Imagen
+                </button>
+                <button id="mi-tab-nav-modal" class="nav-link" data-bs-toggle="tab" data-bs-target="#nav-modal"
+                    type="button" role="tab" aria-controls="nav-modal" aria-selected="false">
+                    Modal
+                </button>
+
+            </div>
+        </nav>
+        <div id="mi-tab-contenido" class="tab-content" style="bg-red">
+            <div id="nav-tabla" class="tab-pane fade show active p-3" role="tabpanel"
+                aria-labelledby="mi-tab-nav-tabla">
+                <table class="table table-striped">
+                    <thead>
+                        <tr>
+                            <th scope="col">#</th>
+                            <th scope="col">First</th>
+                            <th scope="col">Last</th>
+                            <th scope="col">Handle</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th scope="row">1</th>
+                            <td>Mark</td>
+                            <td>Otto</td>
+                            <td>@mdo</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">2</th>
+                            <td>Jacob</td>
+                            <td>Thornton</td>
+                            <td>@fat</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">3</th>
+                            <td colspan="2">Larry the Bird</td>
+                            <td>@twitter</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div id="nav-formulario" class="tab-pane fade p-3" role="tabpanel" aria-labelledby="mi-tab-nav-formulario">
+                <div class="input-group mb-3">
+                    <span class="input-group-text" id="basic-addon1">@</span>
+                    <input type="text" class="form-control" placeholder="Username" aria-label="Username"
+                        aria-describedby="basic-addon1">
+                </div>
+
+                <div class="input-group mb-3">
+                    <input type="text" class="form-control" placeholder="Recipient's username"
+                        aria-label="Recipient's username" aria-describedby="basic-addon2">
+                    <span class="input-group-text" id="basic-addon2">@example.com</span>
+                </div>
+
+                <label for="basic-url" class="form-label">Your vanity URL</label>
+                <div class="input-group mb-3">
+                    <span class="input-group-text" id="basic-addon3">https://example.com/users/</span>
+                    <input type="text" class="form-control" id="basic-url" aria-describedby="basic-addon3">
+                </div>
+
+                <div class="input-group mb-3">
+                    <span class="input-group-text">$</span>
+                    <input type="text" class="form-control" aria-label="Amount (to the nearest dollar)">
+                    <span class="input-group-text">.00</span>
+                </div>
+
+                <div class="input-group mb-3">
+                    <input type="text" class="form-control" placeholder="Username" aria-label="Username">
+                    <span class="input-group-text">@</span>
+                    <input type="text" class="form-control" placeholder="Server" aria-label="Server">
+                </div>
+
+                <div class="input-group">
+                    <span class="input-group-text">With textarea</span>
+                    <textarea class="form-control" aria-label="With textarea"></textarea>
+                </div>
+            </div>
+            <div id="nav-cards" class="tab-pane fade p-3" role="tabpanel" aria-labelledby="mi-tab-nav-cards">
+                <div class="row">
+                    <div class="card" style="width: 18rem;">
+                        <img src="..." class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Card 1</h5>
+                            <p class="card-text">Some quick example text to build on the card title and make up the
+                                bulk of the card's content.</p>
+                            <a href="#" class="btn btn-color-1">Go somewhere</a>
+                        </div>
+                    </div>
+                    <div class="card" style="width: 18rem;">
+                        <img src="..." class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Card 2</h5>
+                            <p class="card-text">Some quick example text to build on the card title and make up the
+                                bulk of the card's content.</p>
+                            <a href="#" class="btn btn-color-2">Go somewhere</a>
+                        </div>
+                    </div>
+                    <div class="card" style="width: 18rem;">
+                        <img src="..." class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Card 3</h5>
+                            <p class="card-text">Some quick example text to build on the card title and make up the
+                                bulk of the card's content.</p>
+                            <a href="#" class="btn btn-color-3">Go somewhere</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="nav-imagen" class="tab-pane fade p-3" role="tabpanel" aria-labelledby="mi-tab-nav-imagen">
+
+            </div>
+            <div id="nav-modal" class="tab-pane fade p-3" role="tabpanel" aria-labelledby="mi-tab-nav-modal">
+                <!-- Button trigger modal -->
+                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                    Mi Nombre
+                </button>
+
+                <!-- Modal -->
+                <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                    aria-hidden="true">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="exampleModalLabel">Info del Desarrollador</h5>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                    aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                Brandon Montoya Gutierrez
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                                <button type="button" class="btn btn-primary">Gracias</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
